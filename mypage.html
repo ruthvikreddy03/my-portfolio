@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruthvik's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            background: linear-gradient(90deg, #ff6a00, #ee0979);
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #ff6a00;
+        }
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .bio-pic {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .bio-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .skills .skill {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .cartoon {
+            margin: 2rem 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        #certificates {
+            display: none;
+            padding: 2rem;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            width: 80%;
+            border-radius: 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #ff6a00;
+            font-size: 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #ff6a00;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showCertificates() {
+            document.getElementById('certificates').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hi, I’m Ruthvik!</h1>
+        <p>Aspiring F1 Software Engineer | Animation Enthusiast</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills" onclick="showCertificates()">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2><b>About Me</b></h2>
+        <div class="bio-pic">
+            <img src="C:\Users\Ruthv\OneDrive\Pictures\pass port size pic mine.jpg" alt="Profile Picture">
+            <pre><b>
+                👋 Hi, I'm Diguva Sadum Ruthvik! 
+                🚀 Aspiring Data Scientist | Formula 1 Enthusiast | Tech Innovator  
+                
+                I'm a Computer Science Engineer with a passion for data science, machine learning, and AI-driven solutions.
+                I enjoy working with data analytics, predictive modeling, and automation to solve real-world problems.  
+                🎯Goals: To become a Data Scientist and contribute to Formula 1 analytics, AI innovations, and decision-making technologies 
+                
+                When I'm not analyzing data, you’ll find me exploring motorsports, learning new tech, or improving my English fluency. 🚗💨📊  
+                
+                Let’s connect and turn data into insights! 
+            </b></pre>
+        </div>
+        <img src="https://media1.tenor.com/m/CcjotC-xiXsAAAAC/shin-chan-sorry.gif" alt="Shinchan Animation" class="cartoon">
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">Data Science</div>
+            
+        </div>
+    </section>
+
+    <div id="certificates">
+        <h2>My Certificates</h2>
+        <ul>
+            <li>Python Programming Certification</li>
+            <li>Java Certification</li>
+            <li>Data Science Specialization</li>
+            <li>MongoDB Developer Certificate</li>
+        </ul>
+    </div>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Here are some cool things I’ve built:</p>
+        <ul>
+            <li>Metro App using Dijkstra’s Algorithm</li>
+            <li>Hand Gesture-Based Visual Cursor</li>
+            <li>Funny animations for game streams</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>If you’re interested in working with me or just want to say hi, feel free to reach out!</p>
+        <p>Email: <a href="mailto:ruthvikreddyds@example.com">ruthvik@example.com</a></p>
+        <p>Phone: +91-6304829781</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">📷</a>
+            <a href="https://www.facebook.com" target="_blank">📘</a>
+            <a href="https://www.linkedin.com" target="_blank">🔗</a>
+            <a href="https://github.com" target="_blank">🐙</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ruthvik | Built with love and a dash of humor!</p>
+    </footer>
+</body>
+</html>
